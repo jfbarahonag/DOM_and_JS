@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic operations</title>
+</head>
+<body>
+    <h2>Read nodes</h2>
+    <p>There are 4 main ways of read nodes with JS</p>
+    <ol>
+        <li><b>parent.getElementById('id')</b></li>
+        <p>Allows us get an element through its ID</p>
+        <li><b>parent.getElementsByClassName('class')</b></li>
+        <p>Allows us get an array with all its child elements that the class has.</p>
+        <li><b>parent.getElementsByTagName('tag')</b></li>
+        <p>Allows us get an array list with all elements that have the tag.</p>
+        <li><b>parent.querySelector('value')</b></li>
+        <p>Allows us 3 ways to search (id, class, tag). Unlike 2 previous methods, this method returns ONE element, the first one that contains the value passed as input parameter. ID -> '#id', Class -> '.className', tag -> 'tagname'</p>
+        <li><b>parent.querySelectorAll()</b></li>
+        <p>This method returns an array list with all elements having the selector.</p>
+    </ol>
+    <h4>Note</h4>
+    <p>The element 'parent' is 'document', because we are referring to the DOM (all), all document, and this makes us avoid mistakes. <a href="https://getbootstrap.com/" target="_blank">Visit here for practicing</a></p>
+</body>
+</html>
