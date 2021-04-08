@@ -22,5 +22,11 @@
     </ol>
     <h4>Note</h4>
     <p>The element 'parent' is 'document', because we are referring to the DOM (all), all document, and this makes us avoid mistakes. <a href="https://getbootstrap.com/" target="_blank">Visit here for practicing</a></p>
+
+    <h2>NodeLists v.s. Array</h2>
+    <p>NodeLists lack of operations present in the arrays, like map, filter, some, reduce, etc</p>
+    <p>There is one way to "convert" the nodeLists to array using the <b>spread operator</b> of JS : </p>
+    <p> <b>nodeAsArray = [...nodeList]</b> </p>
+    <p>Work with arrays is better than nodeLists because the browsers and engines (V8 JavaScript engine) are optimized to work with arrays and NOT with nodeLists.</p>
 </body>
 </html>
