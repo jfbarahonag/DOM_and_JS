@@ -28,5 +28,36 @@
     <p>There is one way to "convert" the nodeLists to array using the <b>spread operator</b> of JS : </p>
     <p> <b>nodeAsArray = [...nodeList]</b> </p>
     <p>Work with arrays is better than nodeLists because the browsers and engines (V8 JavaScript engine) are optimized to work with arrays and NOT with nodeLists.</p>
+    
+    <h2>Create/Add nodes</h2>
+    <h3>Create</h3>
+    <p>Nodes to be created could be of 2 types:</p>
+    <ul>
+        <li>Element</li>
+        <p>document.createElement('tag')</p>
+        <li>Text</li>
+        <p>document.createTextContent('Some text')</p>
+    </ul>
+    <p><b>Create</b> an element does not mean that the element be <b>added</b> to the DOM, this creation is made in memory (variable) but it is not added yet. The same happens with the text.</p>
+    <h3>Add</h3>
+    <p>There are many ways to add an nodes to the DOM</p>
+    <ul>
+        <li>parentElement.appendChild(child)</li>
+        <p>The child could be an element or text.</p>
+        <li>parentElement.append(child1, child2,...,childN)</li>
+        <p>Allows insert N child, but internet Explorer does not support append. Polyfill is needed.</p>
+        <li>parentElement.insertBefore(node, reference)</li>
+        <p>Reference needs to be a child of the parentElement.</p>
+        <li>parentElement.insertAdjacentElement(position, element)</li>
+        <p>position: 'beforebegin','afterbegin','beforeend','afterend'. Where <b>'beforebegin'</b> and <b>'afterend'</b> locates the element out of the parentElement.</p>
+    </ul>
+    <h3>Other ways</h3>
+    <ul>
+        <li>node.outerHTML (read)</li>
+        <p>Returns as text the HTML of the element.</p>
+        <li>node.innerHTML (write)</li>
+        <p>Returns the current value of the element, but assign a value is also allowed.</p>
+        <p><b><u>Note: </u></b>innerHTML could be used to introduce attacks to the website "With great power comes great responsibility". It should be avoided if the string to be rendered from innerHTML comes from the user, always an user input should be passed to a sanitize process, then render using innerHTML.</p>
+    </ul>
 </body>
 </html>
