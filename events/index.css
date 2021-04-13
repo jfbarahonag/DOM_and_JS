@@ -74,8 +74,30 @@ body {
     background: rgba(255,255,255,0.4);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
+    padding: 1rem;
 }
 
+.footer-div {
+    padding: 1rem;
+}
+
+.footer-div > h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-div > h4 > a {
+    padding: 0.3rem;
+    color: white;
+    text-decoration: none;
+    border: 0.1rem rgb(180, 174, 174) solid;
+    border-radius: 1rem;
+}
+
+.footer-div > h4 > a:hover {
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.281);
+}
 @keyframes appear {
     from {color: rgb(0, 113, 206);}
     to {color: white;}
