@@ -1,3 +1,7 @@
 [submodule "workshops/workshop1/code/workshop-1-avo"]
 	path = workshops/workshop1/code/workshop-1-avo
 	url = https://github.com/jfbarahonag/web-proj-template
+
+[submodule "workshops/workshop2/code/lazy-loading"]
+	path = workshops/workshop2/code/lazy-loading
+	url = https://github.com/jfbarahonag/lazy_loading.git
